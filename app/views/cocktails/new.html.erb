@@ -1,2 +1,7 @@
 <h1>Let's create a new drink!</h1>
-<p>here we'll add simple form</p>
+<br>
+
+<%= simple_form_for @cocktail do |f| %>
+<%= f.input :name %>
+<%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>

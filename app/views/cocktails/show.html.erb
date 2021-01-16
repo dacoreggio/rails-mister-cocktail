@@ -1,1 +1,7 @@
-<h1>Check it out!</h1>
+<h1><%= @cocktail.name %></h1>
+<%= link_to "Back to all cocktails", root_path %>
+
+
+
+<%= render "doses/new", cocktail: @cocktail, dose: @dose %>
+
